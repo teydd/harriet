@@ -29,9 +29,11 @@ export default function Navbar() {
           <a class="nav-link active text-white" href="/contact">Contact</a>
         </li>
       </ul>
-            <div className='d-md-flex d-sm-block justify-content-between'><a className='nav-link' href="/signup"><i class="bi bi-person-circle fs-3"></i></a>
-            <a className='nav-link' href="/cart"><i class="bi bi-cart fs-3"></i>
-            </a></div>
+            <div className='d-md-flex d-sm-block'>
+            <a className='nav-link' href="/cart"><i class="bi bi-cart fs-3 px-4"></i>
+            </a>
+              <a className='nav-link' href="/signup"><i class="bi bi-person-circle fs-3"></i></a>
+              </div>
     </div>
   </div>
 </nav>
