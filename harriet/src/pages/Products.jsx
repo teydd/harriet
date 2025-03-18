@@ -1,23 +1,38 @@
 import React, { useState } from 'react';
 import { Search } from 'lucide-react';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import grains from "../assets/garins.jpg";
+import fruits from "../assets/fruits.jpg";
+import veges from "../assets/veges.jpg";
+import dairy from "../assets/dairy.jpg";
+import live from "../assets/live.jpg";
+
 
 const CATEGORIES = {
   'Fruits': ['Apples', 'Mangoes', 'Bananas'],
   'Vegetables': ['Tomatoes', 'Carrots', 'Lettuce'],
   'Grains': ['Rice', 'Wheat', 'Maize'],
-  'Livestock and Poultry': ['Goats and Sheep', 'Chicken', 'Ducks', 'Pigs'],
+  'Livestock and Poultry': ['Goats and Sheep', 'Chicken',],
   'Dairy': ['Milk', 'Butter', 'Cheese'],
-  'Seeds and Seedlings': ['Fruit Seeds', 'Grain Seeds', 'Flower Seedlings']
 };
 
 const SAMPLE_PRODUCTS = [
-  { id: '1', name: 'Fresh Tomatoes', category: 'Vegetables', price: 7, unit: 'kg', farmer: "John's Farm", image: 'https://images.unsplash.com/photo-1566385101042-1a0aa0c1268c?auto=format&fit=crop&q=80&w=400' },
-  { id: '2', name: 'Red Apples', category: 'Fruits', price: 3.99, unit: 'kg', farmer: "Green Valley Farm", image: 'https://images.unsplash.com/photo-1619546813926-a78fa6372cd2?auto=format&fit=crop&q=80&w=400' },
-  { id: '3', name: 'Fresh Milk', category: 'Dairy', price: 2.49, unit: 'liter', farmer: "Dairy Dreams", image: 'https://images.unsplash.com/photo-1550583724-b2692b85b150?auto=format&fit=crop&q=80&w=400' },
-  { id: '4', name: 'Free-Range Chicken', category: 'Livestock and Poultry', price: 15.99, unit: 'bird', farmer: "Sunny Farms", image: 'https://images.unsplash.com/photo-1550583724-b2692b85b150?auto=format&fit=crop&q=80&w=400' },
-  { id: '5', name: 'Organic Rice', category: 'Grains', price: 5.99, unit: 'kg', farmer: "Golden Grains", image: 'https://images.unsplash.com/photo-1586201375761-83865001e31c?auto=format&fit=crop&q=80&w=400' },
-  { id: '6', name: 'Farm Butter', category: 'Dairy', price: 6.49, unit: 'pack', farmer: "Dairy Dreams", image: 'https://images.unsplash.com/photo-1550583724-b2692b85b150?auto=format&fit=crop&q=80&w=400' },
+  { id: '1', name: 'Fresh Tomatoes', category: 'Vegetables', price: 7, unit: 'kg', farmer: "John's Farm", image: veges },
+  { id: '2', name: 'Carrots', category: 'Vegetables', price: 7, unit: 'kg', farmer: "John's Farm", image: veges },
+  { id: '3', name: 'Lettuce', category: 'Vegetables', price: 7, unit: 'kg', farmer: "John's Farm", image: veges },
+  { id: '1', name: 'Red Apples', category: 'Fruits', price: 3.99, unit: 'kg', farmer: "Green Valley Farm", image: fruits },
+  { id: '2', name: 'Mangoes', category: 'Fruits', price: 3.99, unit: 'kg', farmer: "Green Valley Farm", image: fruits },
+  { id: '3', name: 'Bananas', category: 'Fruits', price: 3.99, unit: 'kg', farmer: "Green Valley Farm", image: fruits },
+  { id: '1', name: 'Fresh Milk', category: 'Dairy', price: 2.49, unit: 'liter', farmer: "Dairy Dreams", image: dairy },
+  { id: '2', name: 'Butter', category: 'Dairy', price: 2.49, unit: 'liter', farmer: "Dairy Dreams", image: dairy },
+  { id: '3', name: 'Cheese', category: 'Dairy', price: 2.49, unit: 'liter', farmer: "Dairy Dreams", image: dairy },
+  { id: '1', name: 'Free-Range Chicken', category: 'Livestock and Poultry', price: 15.99, unit: 'bird', farmer: "Sunny Farms", image: live },
+  { id: '2', name: 'Goat', category: 'Livestock and Poultry', price: 15.99, unit: 'livestock', farmer: "Sunny Farms", image: live },
+  { id: '3', name: 'Sheep', category: 'Livestock and Poultry', price: 15.99, unit: 'livestock', farmer: "Sunny Farms", image: live },
+  { id: '1', name: 'Organic Rice', category: 'Grains', price: 5.99, unit: 'kg', farmer: "Golden Grains", image: grains },
+  { id: '2', name: 'Wheat', category: 'Grains', price: 5.99, unit: 'kg', farmer: "Golden Grains", image: grains },
+  { id: '3', name: 'Maize', category: 'Grains', price: 5.99, unit: 'kg', farmer: "Golden Grains", image: grains },
+  
 ];
 
 const Products = () => {

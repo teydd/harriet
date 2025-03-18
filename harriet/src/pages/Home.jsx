@@ -40,24 +40,44 @@ export default function Home() {
         </div>
       </div>
     </div>
-    <div className='container'>
-    <div className="row container">
-          {categories.map((category) => (
-            <div key={category.name} className="text-center col-md-3">
-              <img src={category.image} alt={category.name} className="img-fluid" />
-              <div className="p-4">
-                <h3 className="">{category.name}</h3>
-                <Link
-                  to={`/products?category=ksh{category.name.toLowerCase()}`}
-                  className="btn btn-success"
-                >
-                  View Products →
-                </Link>
-              </div>
-            </div>
-          ))}
+      <div className='container'>
+        <div className="row container">
+          <div className="col-6">
+            <img className='img-fluid rounded' src={veges} alt="" />
+          </div>
+          <div className="col-6 text-center">
+            <h2 className='fs-1 mt-5'>Vegetables</h2>
+            <p>Farm to table fresh vegatable</p>
+          </div>
         </div>
-    </div>
+        <div className="row container">
+        <div className="col-6 text-center">
+            <h2 className='fs-1 mt-5'>Fruits</h2>
+            <p>Farm to table freshly picked fruits</p>
+          </div>
+          <div className="col-6 text-center">
+            <img className='img-fluid rounded' src={fruits} alt="" />
+          </div>
+        </div>
+        <div className="row container">
+        <div className="col-6">
+            <img className='img-fluid rounded' src={dairy} alt="" />
+          </div>
+        <div className="col-6 text-center">
+            <h2 className='fs-1 mt-5'>Dairy</h2>
+            <p>Top notch and high quality dairy products readily available</p>
+          </div>
+        </div>
+        <div className="row container text-center">
+        <div className="col-6 text-center">
+            <h2 className='fs-1 mt-5'>Grains</h2>
+            <p className=''>High standard and quality assured grains</p>
+          </div>
+          <div className="col-6">
+            <img className='img-fluid rounded' src={garins} alt="" />
+          </div>
+        </div>
+      </div>
     </>
   )
 }
