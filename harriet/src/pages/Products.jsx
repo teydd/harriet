@@ -100,18 +100,7 @@ const Products = () => {
         {/* Main Content */}
         <div className="col-md-9">
           <div className="mb-4">
-            <div className="input-group">
-              <span className="input-group-text bg-white border-end-0">
-                <Search size={18} />
-              </span>
-              <input
-                type="text"
-                className="form-control border-start-0"
-                placeholder="Search products..."
-                value={searchQuery}
-                onChange={(e) => setSearchQuery(e.target.value)}
-              />
-            </div>
+            
           </div>
 
           <div className="row">
