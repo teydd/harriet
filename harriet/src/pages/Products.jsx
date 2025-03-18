@@ -17,21 +17,21 @@ const CATEGORIES = {
 };
 
 const SAMPLE_PRODUCTS = [
-  { id: '1', name: 'Fresh Tomatoes', category: 'Vegetables', price: 7, unit: 'kg', farmer: "John's Farm", image: veges },
-  { id: '2', name: 'Carrots', category: 'Vegetables', price: 7, unit: 'kg', farmer: "John's Farm", image: veges },
-  { id: '3', name: 'Lettuce', category: 'Vegetables', price: 7, unit: 'kg', farmer: "John's Farm", image: veges },
-  { id: '1', name: 'Red Apples', category: 'Fruits', price: 3.99, unit: 'kg', farmer: "Green Valley Farm", image: fruits },
-  { id: '2', name: 'Mangoes', category: 'Fruits', price: 3.99, unit: 'kg', farmer: "Green Valley Farm", image: fruits },
-  { id: '3', name: 'Bananas', category: 'Fruits', price: 3.99, unit: 'kg', farmer: "Green Valley Farm", image: fruits },
-  { id: '1', name: 'Fresh Milk', category: 'Dairy', price: 2.49, unit: 'liter', farmer: "Dairy Dreams", image: dairy },
-  { id: '2', name: 'Butter', category: 'Dairy', price: 2.49, unit: 'liter', farmer: "Dairy Dreams", image: dairy },
-  { id: '3', name: 'Cheese', category: 'Dairy', price: 2.49, unit: 'liter', farmer: "Dairy Dreams", image: dairy },
-  { id: '1', name: 'Free-Range Chicken', category: 'Livestock and Poultry', price: 15.99, unit: 'bird', farmer: "Sunny Farms", image: live },
-  { id: '2', name: 'Goat', category: 'Livestock and Poultry', price: 15.99, unit: 'livestock', farmer: "Sunny Farms", image: live },
-  { id: '3', name: 'Sheep', category: 'Livestock and Poultry', price: 15.99, unit: 'livestock', farmer: "Sunny Farms", image: live },
-  { id: '1', name: 'Organic Rice', category: 'Grains', price: 5.99, unit: 'kg', farmer: "Golden Grains", image: grains },
-  { id: '2', name: 'Wheat', category: 'Grains', price: 5.99, unit: 'kg', farmer: "Golden Grains", image: grains },
-  { id: '3', name: 'Maize', category: 'Grains', price: 5.99, unit: 'kg', farmer: "Golden Grains", image: grains },
+  { id: '1', name: 'Fresh Tomatoes', category: 'Vegetables', price:1, unit: 'kg', farmer: "John's Farm", image:"src/assets/Tomatoes.jpeg" },
+  { id: '2', name: 'Carrots', category: 'Vegetables', price: 1.3, unit: 'kg', farmer: "John's Farm", image:"src/assets/Carrots.jpg" },
+  { id: '3', name: 'Lettuce', category: 'Vegetables', price: 2.5, unit: 'kg', farmer: "John's Farm", image: "src/assets/Lettuce.jpg" },
+  { id: '1', name: 'Red Apples', category: 'Fruits', price: 2, unit: 'kg', farmer: "Green Valley Farm", image: "src/assets/Apples.jpeg" },
+  { id: '2', name: 'Mangoes', category: 'Fruits', price: 1.3, unit: 'kg', farmer: "Green Valley Farm", image:"src/assets/Mangoes.jpeg" },
+  { id: '3', name: 'Bananas', category: 'Fruits', price: 1, unit: 'kg', farmer: "Green Valley Farm", image:"src/assets/Bananas.jpeg" },
+  { id: '1', name: 'Fresh Milk', category: 'Dairy', price: 2.4, unit: 'liter', farmer: "Dairy Dreams", image: "src/assets/Milk.jpg" },
+  { id: '2', name: 'Butter', category: 'Dairy', price: 2.49, unit: 'liter', farmer: "Dairy Dreams", image: "src/assets/Butter.jpg" },
+  { id: '3', name: 'Cheese', category: 'Dairy', price: 3, unit: 'gram', farmer: "Dairy Dreams", image:"src/assets/Cheese.jpg" },
+  { id: '1', name: 'Free-Range Chicken', category: 'Livestock and Poultry', price: 15.99, unit: 'bird', farmer: "Sunny Farms", image:"src/assets/Chickens.jpg" },
+  { id: '2', name: 'Goat', category: 'Livestock and Poultry', price: 15.99, unit: 'livestock', farmer: "Sunny Farms", image: "src/assets/Goats.jpg" },
+  { id: '3', name: 'Sheep', category: 'Livestock and Poultry', price: 15.99, unit: 'livestock', farmer: "Sunny Farms", image: "src/assets/Sheeps.jpg" },
+  { id: '1', name: 'Organic Rice', category: 'Grains', price: 2, unit: 'kg', farmer: "Golden Grains", image:"src/assets/Rice.jpg" },
+  { id: '2', name: 'Wheat', category: 'Grains', price: 1.4, unit: 'kg', farmer: "Golden Grains", image:"src/assets/Wheat.jpg" },
+  { id: '3', name: 'Maize', category: 'Grains', price: 2.4, unit: 'kg', farmer: "Golden Grains", image:"src/assets/Maize.jpg" },
   
 ];
 
